@@ -22,7 +22,7 @@ function InputBox() {
     //* Make a collection of 'posts' and add whatever u want
     db.collection('posts')
       .add({
-        valuemessage: inputRef.current.value,
+        message: inputRef.current.value,
         name: session.user.name,
         email: session.user.email,
         image: session.user.image,
