@@ -1,6 +1,6 @@
 import { SearchIcon } from '@heroicons/react/outline';
 import { DotsHorizontalIcon, VideoCameraIcon } from '@heroicons/react/solid';
-import Contact from './contact';
+import Contact from './Contact';
 
 function Widgets() {
   const contacts = [
