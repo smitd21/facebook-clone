@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'; //the Image of Next by default has lazy loading and it coverts it to webp format - super optimized images
 import { ChatAltIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline';
 
 function Post({ name, message, email, image, postImage, timestamp }) {

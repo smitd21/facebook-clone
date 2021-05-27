@@ -4,6 +4,7 @@ import Feed from '../components/Feed';
 import Header from '../components/Header';
 import Login from '../components/Login.js';
 import Sidebar from '../components/Sidebar';
+import Widgets from '../components/Widgets';
 
 export default function Home({ session }) {
   //passed the session prop
@@ -24,6 +25,7 @@ export default function Home({ session }) {
         {/* Feed */}
         <Feed />
         {/* Widgets */}
+        <Widgets />
       </main>
     </div>
   );
