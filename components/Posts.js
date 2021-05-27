@@ -29,7 +29,7 @@ function Posts({ posts }) {
               postImage={post.data().postImage}
             />
           ))
-        : // And for prefetched serververside posts render those
+        : // And for prefetched serververside posts render those - do not letting to scroll down unless realtime loaded
           posts.map((post) => (
             <Post
               key={post.id}
