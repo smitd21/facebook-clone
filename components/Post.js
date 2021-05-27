@@ -15,10 +15,19 @@ function Post({ name, message, email, image, postImage, timestamp }) {
           />
           <div className="">
             <p className="font-medium">{name}</p>
-            <p className="text-xs text-gray-400">
-              {new Date(timestamp?.toDate()).toLocaleString()}
-              {/* Takes the timestamp from firebase toDate & then converts it Locale to user */}
-            </p>
+
+            {/* As for prefetched post the timestamp isn't loaded so at that time show 'Loading' and when realtime i.e when timestamp is there show the server actual date&time */}
+
+            {timestamp ? (
+              // For realtime posts (i.e when Realtime post are rendered)
+              <p className="text-xs text-gray-400">
+                {new Date(timestamp?.toDate()).toLocaleString()}
+                {/* Takes the timestamp from firebase toDate & then converts it Locale to user */}
+              </p>
+            ) : (
+              // For prefetched posts show 'Loading'
+              <p className="text-xs text-gray-400">Loading</p>
+            )}
           </div>
         </div>
         <p className="pt-4">{message}</p>
