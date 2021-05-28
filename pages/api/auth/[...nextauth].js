@@ -9,6 +9,10 @@ export default NextAuth({
       clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
     }),
     // ...add more providers here
+    Providers.Google({
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET, //!To not to share private credentials
+    }),
   ],
 
   // A database is optional, but required to persist accounts in a database
