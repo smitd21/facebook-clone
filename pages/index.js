@@ -14,7 +14,7 @@ export default function Home({ session, posts }) {
   if (!session) return <Login />;
 
   return (
-    <div className="h-screen bg-gray-100 overflow-hidden">
+    <div className="h-screen bg-gray-100 overflow-hidden dark:bg-gray-800 dark:text-white">
       <Head>
         <title>Facebook</title>
       </Head>

@@ -87,7 +87,7 @@ function InputBox() {
   };
 
   return (
-    <div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
+    <div className="bg-white dark:bg-gray-900 dark:text-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
       <div className="flex space-x-4 p-4 items-center">
         <Image
           className="rounded-full"
@@ -99,7 +99,7 @@ function InputBox() {
         {/* flex-1 takes majority of space */}
         <form className="flex flex-1">
           <input
-            className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
+            className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none dark:text-black"
             type="text"
             placeholder={`What's on your mind, ${session.user.name}?`}
             ref={inputRef}
@@ -126,7 +126,7 @@ function InputBox() {
           </div>
         )}
       </div>
-      <div className="flex justify-evenly p-3 border-t">
+      <div className="flex justify-evenly p-3 border-t dark:border-t-0">
         <div className="inputIcon">
           <VideoCameraIcon className="h-7 text-red-500" />
           <p className="text-xs sm:text-sm xl:text-base">Live Video</p>

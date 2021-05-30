@@ -4,7 +4,7 @@ function Contact({ src, name }) {
   return (
     <div
       className="flex items-center space-x-3 mb-2 
-    relative hover:bg-gray-200 cursor-pointer p-2 rounded-xl"
+    relative hover:bg-gray-200 cursor-pointer p-2 rounded-xl dark:hover:bg-blue-700"
     >
       <Image
         className="rounded-full"
