@@ -5,6 +5,7 @@ function Login() {
   return (
     <div className="grid place-items-center">
       <Image
+        className="hover:animate-spin"
         src="https://links.papareact.com/t4i"
         height={400}
         width={400}
@@ -12,7 +13,7 @@ function Login() {
       />
       <h1
         onClick={signIn}
-        className="p-5 bg-blue-500 rounded-full cursor-pointer text-white text-center"
+        className="p-5 bg-blue-500 rounded-full cursor-pointer text-white text-center hover:animate-pulse"
       >
         Login with Facebook
       </h1>
