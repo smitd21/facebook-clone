@@ -11,6 +11,7 @@ function Login() {
         width={400}
         objectFit="contain"
       />
+      <h1 className="text-xl mb-10 text-gray-400">F A C E B O O K</h1>
       <h1
         onClick={signIn}
         className="p-5 bg-blue-500 rounded-full cursor-pointer text-white text-center hover:animate-pulse"
